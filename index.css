@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+  background-color: #708090
+    /*można dodać aby logo menu nie miały żadnych 'wcięć' - margin: 0 padding:0 */
+}
+	  
+.logo {
+  text-align:center;
+}
+	  
+.logo img {
+  width: 100%;
+/* można dodać po dopasowaniu elementów menu - max-width: 1920px; */
+}
+
+.navigation-left {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px dotted red;
+  box-sizing:border-box;
+  color: White;
+  font-family: Rockwell;
+  margin: 0px 5px 5px 0px;
+  position: relative;
+  width: 20%;
+}
+
+.navigation-left ul {
+  text-align: left;
+  color: inherit;
+}
+ 
+.navigation-left img {
+  width: 75%;
+}
+
+.navigation-right {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px dotted red;
+  box-sizing:border-box;
+  color: White;
+  float: right;
+  font-family: Rockwell;
+  margin: 0px 0px 5px 0px;
+  width: 20%;
+}
+
+.navigation-right ul {
+  list-style-type: none;
+  text-align: left;
+  color: inherit;
+}
+ 
+.navigation-right img {
+  width: 75%;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px dotted red;
+  color:white;
+  font-family: arial;
+  font-size: 75%;
+  left: 21%; /* 21% dlatego, że paski menu mają width = 20%, określamy więc 'lewo' jako 21% - wtedy uzyskujemy '1%' przerwy pomiędzy menu a content. Okno w środku musi mieć więc width 54%, gdyż 20%*2 + 54% + 2% (przerwa) + 2x*2% padding */
+ /* transform: translate(-50%, -50%); */
+  position: absolute;
+  padding: 2%;
+  transform: translateY 50%;
+  width: 54%;
+  /*display: inline-block; blok zajmie całą linię 'horyzontaline' */
+}
+
+a {
+  color: inherit;  /* inherit oznacza (chyba) - brak zmian */
+  text-decoration: inherit;       /* no-underline in URL */
+}
+  
+a:hover{       /* hover nadaje visualne opcje po najechaniu na hyperlink */
+  color:red;  /*link zmieni kolor na czerwony po najechaniu na niego kursorem */
+}
+
+
+  
+
+  
+
+}	
+	
+	
